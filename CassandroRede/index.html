@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Index</title>  
+
+  <style>
+    .fundoAlemao{
+      background-image: url("C:\\Worksapce\\CassandroRede\\Imagens\\imagem_alemanha.jpg");
+    }
+    .fundoIngles{
+      background-image: url("C:\\Worksapce\\CassandroRede\\Imagens\\imagem_ingles.jpg");
+    }
+    .fundoPortugues{
+      background-image: url("C:\\Worksapce\\CassandroRede\\Imagens\\imagem_portugues.jpg");
+    }
+    .fundoJapones{
+      background-image: url("C:\\Worksapce\\CassandroRede\\Imagens\\imagem_japao.jpg");
+    }
+    .h1_alemao{
+      text-align: center;
+      text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+      color: white;
+    }
+    .h1_ingles{
+      text-align: center;
+      text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+      color: white;
+    }
+    .h1_portugues{
+      text-align: center;
+      text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+      color: white;
+    }
+    .h1_japones{
+      text-align: center;
+      text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+      color: white;
+    }
+    .h1_inicial{
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+    }
+    .ul_fundo {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: transparent;
+      text-align: center;
+      align-items: center;
+      text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+      font-size: 150%   }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    
+    li a:active {
+      background-color: red;
+    }
+  </style>
+
+</head>
+
+<body id="pagina">
+ <h1 id="meuh1" class="h1_inicial">Hello Word(Bem vindo)</h1>
+ <ul id="lista">
+  <li><a href="javascript:troca_alemao(this);">Alemão</a></li>
+  <li><a href="javascript:troca_ingles(this)" >Ingles</a></li>
+  <li><a href="javascript:troca_japones(this)">Japones</a></li>
+  <li><a href="javascript:troca_portugues(this)">Portugues</a></li>
+</ul>
+<script>   
+  function troca_alemao(link) {
+      var h1 = document.getElementById('meuh1');
+      h1.innerHTML = "Hallo Welt";
+      h1.className = 'h1_alemao'
+      var fund = document.getElementById('pagina');
+      fund.className = "fundoAlemao";
+      var lista = document.getElementById('lista');
+      lista.className = "ul_fundo"
+  }
+  function troca_portugues(link) {
+      var h1 = document.getElementById('meuh1');
+      h1.innerHTML = "Olá Mundo";
+      h1.className = "h1_portugues";
+      var fund = document.getElementById('pagina');
+      fund.className = "fundoPortugues";
+      var lista = document.getElementById('lista');
+      lista.className = "ul_fundo"
+  }
+  function troca_ingles(link) {
+      var h1 = document.getElementById('meuh1');
+      h1.innerHTML = "Hello Word";
+      h1.className = "h1_ingles";
+      var fund = document.getElementById('pagina');
+      fund.className = "fundoIngles";
+      var lista = document.getElementById('lista');
+      lista.className = "ul_fundo"
+  }
+  function troca_japones(link) {
+      var h1 = document.getElementById('meuh1');
+      h1.innerHTML = "こんにちは世界";
+      h1.className = "h1_japones";
+      var fund = document.getElementById('pagina');
+      fund.className = "fundoJapones";
+      var lista = document.getElementById('lista');
+      lista.className = "ul_fundo"
+  }
+</script>
+</body>
+
+</html>
